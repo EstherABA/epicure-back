@@ -14,5 +14,5 @@ app.use(cors());
 app.use(routes);
 dotenv.config();
 const port = process.env.PORT
-app.listen(port, () => console.log(`Listening on http://localhost:${port}`));
+app.listen(port, () => console.log(`Listening on https://epicure-server-97fs.onrender.com/`));
 connectToDB();
