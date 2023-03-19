@@ -8,7 +8,7 @@ export interface IChef {
     restaurants: Array<string>,
     isChefOfTheWeek:boolean, 
     description: string,
-    isNew: boolean,
+    isNewChef: boolean,
     viewCount: number,
     mostViewed: boolean,
 }
@@ -20,7 +20,7 @@ export const chefSchema  = new Schema<IChef>({
     restaurants:{Array, required: false},
     isChefOfTheWeek:{type:Boolean, required: false}, 
     description: {type:String, required: true},
-    isNew: {type:Boolean, required: false},
+    isNewChef: {type:Boolean, required: false},
     viewCount: {type:Number, required: false},
     mostViewed: {type:Boolean, required: false},
 });
